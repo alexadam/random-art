@@ -1,0 +1,98 @@
+/* line 18, ../sass/mockups.scss */
+body {
+  background-color: #ccc;
+  font-family: helvetica, serif;
+}
+
+/* line 23, ../sass/mockups.scss */
+.a4Eu, .a4EuContainer, .bcardUs, .bcardUsContainer, .p1000, .p500 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 45, ../sass/mockups.scss */
+.a4Eu {
+  width: 600px;
+  height: 848.4px;
+  background-color: #fff;
+}
+
+/* line 52, ../sass/mockups.scss */
+.a4EuContainer {
+  width: 1320px;
+  height: 848.4px;
+}
+
+/* line 57, ../sass/mockups.scss */
+.a4EuInContainer {
+  width: 600px;
+  height: 848.4px;
+  background-color: #fff;
+  margin-left: 20px;
+  float: left;
+}
+
+/* line 65, ../sass/mockups.scss */
+.bcardUs {
+  width: 600px;
+  height: 343.83954px;
+  background-color: #fff;
+}
+
+/* line 72, ../sass/mockups.scss */
+.bcardUsContainer {
+  width: 600px;
+  height: 756.44699px;
+}
+
+/* line 77, ../sass/mockups.scss */
+.bcardUsInContainer {
+  width: 600px;
+  height: 343.83954px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+/* line 84, ../sass/mockups.scss */
+.p1000 {
+  width: 1000px;
+  height: 1000px;
+  background-color: #fff;
+}
+
+/* line 91, ../sass/mockups.scss */
+.p500 {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+}
+
+/* line 8, ../sass/lineSplit.scss */
+body {
+  background-color: #777;
+}
+
+/* line 12, ../sass/lineSplit.scss */
+.a4Eu {
+  background-color: #eee;
+}
+
+/* line 16, ../sass/lineSplit.scss */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  top: 30%;
+  position: relative;
+}
+
+/* line 23, ../sass/lineSplit.scss */
+.container2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 15%;
+  margin-left: 7%;
+  position: relative;
+  float: left;
+}

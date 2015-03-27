@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A4 eu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mockups.css" />
+    <link rel="stylesheet" href="css/lineSplit.css" />
+
+    <script src="libjs/jquery.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/palettes.js"></script>
+    <script src="app/unicode.js"></script>
+    <script src="app/glitchLib.js"></script>
+
+    <script>
+        $(document).ready(
+            function () {
+                var a = (generateRandomUnicodeChars(-1, 800));
+                var b = (generateRandomUnicodeChars(-1, 800));
+                var c = (generateRandomUnicodeChars(-1, 800));
+
+                paintText('canvas1', a, 6, 60);
+                glitchImage('canvas1', 100);
+                paintText('canvas2', b, 6, 60);
+                glitchImage('canvas2', 100);
+                paintText('canvas3', c, 6, 60);
+                glitchImage('canvas3', 100);
+            }
+        );
+    </script>
+</head>
+
+<body>
+    <div class="a4Eu">
+
+        <div class="container2">
+            <canvas id="canvas1" width="510" height="150">Your browser does not support the canvas element.</canvas>
+        </div>
+        <div class="container2">
+            <canvas id="canvas2" width="510" height="150">Your browser does not support the canvas element.</canvas>
+        </div>
+        <div class="container2">
+            <canvas id="canvas3" width="510" height="150">Your browser does not support the canvas element.</canvas>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+@import "compass";
+@import "utils.scss";
+@import "mockups.scss";
+
+$backColor: #eee;
+$bodyBackColor: #777;
+
+body {
+    background-color: $bodyBackColor;
+}
+
+.a4Eu {
+    background-color: $backColor;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    top: 30%;
+    position: relative;
+}
+
+.container2 {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-left: 7%;
+    position: relative;
+    float: left;
+}

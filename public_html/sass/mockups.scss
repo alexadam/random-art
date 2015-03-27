@@ -1,0 +1,96 @@
+@import "compass";
+@import "utils.scss";
+
+$a4EuWidth : 600px;
+$a4EuHeight : $a4EuWidth * 1.414;
+
+$bcardUsWidth : 600px;
+$bcardUsHeight : $bcardUsWidth / 1.745;
+
+$p1000 : 1000px;
+$p500 : 500px;
+
+$wallColor : #ccc;
+$mockupColor : #fff;
+$marginTop : 100px;
+$marginBottom : 100px;
+
+body {
+    background-color: $wallColor;
+    font-family: helvetica, serif;
+}
+
+%center-pos {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin createContainerHorizontal($baseWidth, $baseHeight, $widthFactor) {
+    width: $baseWidth * $widthFactor;
+    height: $baseHeight;
+}
+
+@mixin createContainerVerical($baseWidth, $baseHeight, $heightFactor) {
+    width: $baseWidth;
+    height: $baseHeight * $heightFactor;
+}
+
+@mixin createContainerBoth($baseWidth, $baseHeight, $heightFactor, $widthFactor) {
+    width: $baseWidth * $widthFactor;
+    height: $baseHeight * $heightFactor;
+}
+
+.a4Eu {
+    width: $a4EuWidth;
+    height: $a4EuHeight;
+    background-color: $mockupColor;
+    @extend %center-pos;
+}
+
+.a4EuContainer {
+    @include createContainerHorizontal($a4EuWidth, $a4EuHeight, 2.2);
+    @extend %center-pos;
+}
+
+.a4EuInContainer {
+    width: $a4EuWidth;
+    height: $a4EuHeight;
+    background-color: $mockupColor;
+    margin-left: 20px;
+    float: left;
+}
+
+.bcardUs {
+    width: $bcardUsWidth;
+    height: $bcardUsHeight;
+    background-color: $mockupColor;
+    @extend %center-pos;
+}
+
+.bcardUsContainer {
+    @include createContainerVerical($bcardUsWidth, $bcardUsHeight, 2.2);
+    @extend %center-pos;
+}
+
+.bcardUsInContainer {
+    width: $bcardUsWidth;
+    height: $bcardUsHeight;
+    background-color: $mockupColor;
+    margin-top: 20px;
+}
+
+.p1000 {
+    width: $p1000;
+    height: $p1000;
+    background-color: $mockupColor;
+    @extend %center-pos;
+}
+
+.p500 {
+    width: $p500;
+    height: $p500;
+    background-color: $mockupColor;
+    @extend %center-pos;
+}

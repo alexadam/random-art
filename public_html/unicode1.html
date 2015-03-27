@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A4 eu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mockups.css" />
+    <link rel="stylesheet" href="css/lineSplit.css" />
+
+    <script src="libjs/jquery.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/palettes.js"></script>
+    <script src="app/unicode.js"></script>
+
+    <script>
+        $(document).ready(
+            function () {
+                var a = generateRandomUnicodeChars(-1, 2000);
+                var b = generateMiscRandomUnicodeChars(2000);
+                
+                paintText('canvas', a, 15, 60);
+            }
+        );
+    </script>
+</head>
+
+<body>
+    <div class="a4Eu">
+
+        <div class="container">
+            <canvas id="canvas" width="540" height="300">Your browser does not support the canvas element.</canvas>
+        </div>
+
+    </div>
+</body>
+
+</html>
